@@ -65,6 +65,9 @@ SecureGuard is a comprehensive security suite addressing two critical enterprise
 | ![Dashboard](demo/screenshots/dashboard.png) | ![Call Verdict](demo/screenshots/call_verdict.png) |
 
 ### OSS SecureScore > 📸 See /demo/screenshots/ folder for all screenshots.
+<img width="1140" height="842" alt="Screenshot 2026-03-25 104141" src="https://github.com/user-attachments/assets/21de48a4-c17a-4f53-b060-7776eac7e908" />  <img width="1005" height="773" alt="Screenshot 2026-03-25 104211" src="https://github.com/user-attachments/assets/1de606d5-1a3d-43fa-be77-d77de75ab996" />
+
+
 
 ---
 
