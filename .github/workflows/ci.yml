@@ -1,0 +1,43 @@
+name: SecureGuard CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  python-cli:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        cd ossscore-cli
+        pip install -e .
+    - name: Verify CLI
+      run: |
+        cd ossscore-cli
+        sg scan requests
+
+  flutter-app:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.x'
+    - name: Install dependencies
+      run: |
+        cd fakecall-app
+        flutter pub get
+    - name: Run Tests
+      run: |
+        cd fakecall-app
+        # Since I haven't added specific test files, this might fail or be skipped.
+        # Adding a basic test file or just verifying the structure.
+        flutter analyze

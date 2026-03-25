@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Flutter
+fakecall-app/build/
+fakecall-app/.dart_tool/
+fakecall-app/.flutter-plugins
+fakecall-app/.flutter-plugins-dependencies
+*.iml
+.gradle/
+
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.idea/
+.vscode/

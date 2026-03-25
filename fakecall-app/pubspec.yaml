@@ -1,0 +1,28 @@
+name: fakecall_app
+description: A new Flutter project for SecureGuard FakeCall Detection.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite_flutter: ^0.10.4
+  sqflite: ^2.3.0
+  permission_handler: ^11.0.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  intl: ^0.18.1
+  material_color_utilities: ^0.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
